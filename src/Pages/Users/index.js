@@ -47,7 +47,7 @@ const history = useHistory()
     }
 
         function goBackPage(){
-            history.push('/Home')
+            history.goBack()
 
         }
 

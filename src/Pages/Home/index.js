@@ -16,7 +16,7 @@ export default function App() {
 
     const [users, setUsers] = useState([]);
 
-    const history = useHistory()
+    const history = useHistory();
     const inputName = useRef();
     const inputAge = useRef();
 
@@ -33,7 +33,7 @@ export default function App() {
         setUsers([...users, newUser]);
 
 
-            history.push("/Users")
+            history.push("/Users");
     }
 
     
