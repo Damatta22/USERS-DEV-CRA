@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-
+import {useHistory} from 'react-router-dom'
 import axios from 'axios';
 
 import People from '../../assets/people.svg';
@@ -15,6 +15,8 @@ import { Container, Image, ConteinerItens, H1, InputLabel, Input, Button} from '
 export default function App() {
 
     const [users, setUsers] = useState([]);
+
+    const history = useHistory()
     const inputName = useRef();
     const inputAge = useRef();
 
@@ -31,6 +33,7 @@ export default function App() {
         setUsers([...users, newUser]);
 
 
+            history.push("/Users")
     }
 
     

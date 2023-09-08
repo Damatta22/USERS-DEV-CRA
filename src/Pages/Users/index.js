@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import {useHistory} from 'react-router-dom'
 import axios from 'axios';
 
 import Avatar from '../../assets/avatar.svg';
@@ -12,11 +12,11 @@ import Trash from '../../assets/trash.svg';
 import { Container, Image, ConteinerItens, H1, Button, User } from './styles';
 
 
-export default function App() {
+export default function Users() {
 
     const [users, setUsers] = useState([]);
     
-
+const history = useHistory()
     
 
     useEffect(() => {
@@ -46,7 +46,10 @@ export default function App() {
 
     }
 
+        function goBackPage(){
+            history.push('/Home')
 
+        }
 
 
     return (
@@ -78,7 +81,7 @@ export default function App() {
                 </ul>
 
 
-                <Button><img alt='arrow' src={Arrow} />Back</Button>
+                <Button onClick={goBackPage}><img alt='arrow' src={Arrow} />Back</Button>
                 
             
 
