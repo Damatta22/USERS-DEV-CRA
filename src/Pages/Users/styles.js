@@ -89,6 +89,11 @@ justify-content:center;
 gap:20px;
 
 
+img {
+
+transform:rotateY(180deg);
+
+}
 
 &:hover{
 
@@ -100,10 +105,7 @@ gap:20px;
     opacity:0.5;
 }
 
-img{
 
-transform: rotateY('180deg');
-}
 
 `;
 

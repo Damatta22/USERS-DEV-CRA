@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import axios from 'axios';
 
 import Avatar from '../../assets/avatar.svg';
@@ -16,7 +16,7 @@ export default function Users() {
 
     const [users, setUsers] = useState([]);
     
-const history = useHistory()
+const navigate = useNavigate()
     
 
     useEffect(() => {
@@ -47,7 +47,7 @@ const history = useHistory()
     }
 
         function goBackPage(){
-            history.goBack()
+            navigate("/");
 
         }
 
