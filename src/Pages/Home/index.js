@@ -5,11 +5,12 @@ import axios from 'axios';
 import People from '../../assets/people.svg';
 import Arrow from '../../assets/arrow.svg';
 
+import H1 from "../../components/title"
+import ContainerItens from "../../components/ContainerItens"
 
 
 
-
-import { Container, Image, ConteinerItens, H1, InputLabel, Input, Button} from './styles';
+import { Container, Image, InputLabel, Input, Button} from './styles';
 
 
 export default function App() {
@@ -44,7 +45,7 @@ export default function App() {
         <Container>
             <Image alt="img" src={People} />
 
-            <ConteinerItens>
+            <ContainerItens>
                 <H1>Hello!</H1>
 
                 <InputLabel>Name</InputLabel>
@@ -60,7 +61,7 @@ export default function App() {
             
                 
 
-            </ConteinerItens>
+            </ContainerItens>
 
         </Container>
 

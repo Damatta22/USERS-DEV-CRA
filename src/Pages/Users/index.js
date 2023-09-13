@@ -7,9 +7,10 @@ import Arrow from '../../assets/arrow.svg';
 import Trash from '../../assets/trash.svg';
 
 
+import H1 from '../../components/title'
+import ContainerItens from "../../components/ContainerItens";
 
-
-import { Container, Image, ConteinerItens, H1, Button, User } from './styles';
+import { Container, Image,Button, User } from './styles';
 
 
 export default function Users() {
@@ -57,7 +58,7 @@ const navigate = useNavigate()
         <Container>
             <Image alt="img" src={Avatar} />
 
-            <ConteinerItens>
+            <ContainerItens isBlur={true}>
                 <H1>Users</H1>
 
                 
@@ -85,7 +86,7 @@ const navigate = useNavigate()
                 
             
 
-            </ConteinerItens>
+            </ContainerItens>
 
         </Container>
 
